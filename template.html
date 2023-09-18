@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Golang Course</title>
+</head>
+<body>
+    <div>
+        <ul>
+            {{range $value := .}}
+            <li>
+                <strong>ID:</strong> {{$value.ID}},
+                <strong>Title:</strong> {{$value.Title}},
+                <strong>Stock:</strong> {{$value.Stock}},
+                <strong>Author:</strong> {{$value.Author}}
+            </li>
+            {{end}}
+        </ul>
+    </div>
+</body>
+</html>
